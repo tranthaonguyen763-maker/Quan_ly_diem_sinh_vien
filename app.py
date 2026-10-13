@@ -95,7 +95,7 @@ st.subheader("3. Tra cứu điểm sinh viên")
 
 ten_sv = st.selectbox(
     "Chọn sinh viên:",
-    df["Họ và "].tolist()
+    df["Họ và tên"].tolist()
 )
 
 sv = df[df["Họ và tên"] == ten_sv].iloc[0]
