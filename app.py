@@ -104,8 +104,8 @@ st.write(f"**Họ và tên:** {sv['Họ và tên']}")
 st.write(f"**Điểm chuyên cần:** {sv['Điểm chuyên cần']}")
 st.write(f"**Điểm giữa kỳ:** {sv['Điểm giữa kỳ']}")
 st.write(f"**Điểm cuối kỳ:** {sv['Điểm cuối kỳ']}")
-st.write(f"**Điểm tổng kết:** {sv['Điểm tổng kết']:.2f}")
-st.write(f"**Xếp loại:** {sv['Xep_loai']}")
+st.write(f"**Điểm tổng kết:** {sv['Tổng kết']:.2f}")
+st.write(f"**Xếp loại:** {sv['Xếp loại']}")
 
 # Biểu đồ
 st.subheader("4. Biểu đồ điểm tổng kết")
