@@ -111,7 +111,7 @@ st.write(f"**Xếp loại:** {sv['Xếp loại']}")
 st.subheader("4. Biểu đồ điểm tổng kết")
 
 fig, ax = plt.subplots(figsize=(10, 5))
-ax.bar(df["Ho_va_ten"], df["Tong_ket"])
+ax.bar(df["Họ và tên"], df["Tổng kết"])
 ax.set_xlabel("Họ và tên sinh viên")
 ax.set_ylabel("Điểm tổng kết")
 ax.set_ylim(0, 10)
