@@ -95,16 +95,16 @@ st.subheader("3. Tra cứu điểm sinh viên")
 
 ten_sv = st.selectbox(
     "Chọn sinh viên:",
-    df["Ho_va_ten"].tolist()
+    df["Họ và "].tolist()
 )
 
-sv = df[df["Ho_va_ten"] == ten_sv].iloc[0]
+sv = df[df["Họ và tên"] == ten_sv].iloc[0]
 
-st.write(f"**Họ và tên:** {sv['Ho_va_ten']}")
-st.write(f"**Điểm chuyên cần:** {sv['Chuyen_can']}")
-st.write(f"**Điểm giữa kỳ:** {sv['Giua_ky']}")
-st.write(f"**Điểm cuối kỳ:** {sv['Cuoi_ky']}")
-st.write(f"**Điểm tổng kết:** {sv['Tong_ket']:.2f}")
+st.write(f"**Họ và tên:** {sv['Họ và tên']}")
+st.write(f"**Điểm chuyên cần:** {sv['Điểm chuyên cần']}")
+st.write(f"**Điểm giữa kỳ:** {sv['Điểm giữa kỳ']}")
+st.write(f"**Điểm cuối kỳ:** {sv['Điểm cuối kỳ']}")
+st.write(f"**Điểm tổng kết:** {sv['Điểm tổng kết']:.2f}")
 st.write(f"**Xếp loại:** {sv['Xep_loai']}")
 
 # Biểu đồ
