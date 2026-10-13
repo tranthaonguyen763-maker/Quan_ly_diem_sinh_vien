@@ -78,7 +78,7 @@ so_sv_dat = (df['Tổng kết'] >= 5).sum()
 
 cot1, cot2, cot3, cot4 = st.columns(4)
 
-cot1.metric("Điểm trung bình lớp", f"{diem_tb:.2f}")
+cot1.metric("Điểm trung bình lớp", f"{dtk_trung_binh:.2f}")
 cot2.metric("Điểm cao nhất", f"{sv_max['Tổng kết']:.2f}")
 cot3.metric("Điểm thấp nhất", f"{sv_min['Tổng kết']:.2f}")
 cot4.metric("Số sinh viên đạt", f"{so_sv_dat}/{len(df)}")
